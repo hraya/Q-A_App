@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar.js';
 import Questions from './components/Questions.js';
 import Question from './Question/Question.js'
+import Callback from './components/Callback';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <NavBar />
        <Route exact path='/' component={Questions} />
        <Route exact path='/question/:questionId' component={Question} />
+       <Route exact path='/callback' component={Callback} />
       </div>
     );
   }

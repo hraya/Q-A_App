@@ -20,10 +20,12 @@ class Auth {
   }
 
   getProfile() {
+    console.log('this is ingetProfile',this.profile);
     return this.profile;
   }
 
   getIdToken() {
+    console.log('this is in getIdToken', this.idToken, 'next is the idTokenPaylod', this.idTokenPayload)
     return this.idToken;
   }
 

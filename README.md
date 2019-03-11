@@ -8,8 +8,9 @@ Only a user that is logged in can ask and answer a question.
 ## Test on Local
 For this application React, Nodejs, and Express were used.
 To run locally do a yarn install for both frontend and backend directory to insall all needed dependencies.
-Run yarn server to start up the backend on the backend directory.
-Then, Run yarn start on the frontend directory to start up the React App.
+
+* Run yarn server to start up the backend on the backend directory.
+* Then, Run yarn start on the frontend directory to start up the React App.
 
 ## Disclaimer
 This is just a test application so there still may be a few glitches in the app. The idea of this application was for educational purposes.

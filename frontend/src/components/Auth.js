@@ -9,7 +9,7 @@ class Auth {
       clientID: '60Syey3xQNH7oX1m1F8cE922yvVqcut1',
       redirectUri: 'http://localhost:3000/callback',
       responseType: 'id_token',
-      scope: 'openid profile'
+      scope: 'openid email profile'
     });
 
     this.getProfile = this.getProfile.bind(this);
@@ -20,6 +20,7 @@ class Auth {
   }
 
   getProfile() {
+    console.log('profile info',this.profile)
     return this.profile;
   }
 
@@ -43,6 +44,7 @@ class Auth {
           return reject(err);
         }
         this.setSession(authResult);
+        console.log('IN handle authentication', authResult)
         resolve();
       });
     })
